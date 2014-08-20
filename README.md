@@ -1,5 +1,5 @@
-Open-edX-eBook
-==============
+The Ultimate Guide To Open edX
+==============================
 
 "The Ultimate Guide To Open edX" explores the most visually engaging and innovative learning platform in the world for MOOCs, flipped courses and blended learning.
 
