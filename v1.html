@@ -33,3 +33,80 @@
     <li><a href="http://learn-moocit.fr/">MoocIT</a></li>
     <li><a href="https://ethicon.edx.org/">Ethicon</a></li>
 </ul>
+
+<br>
+    
+<h2>3. TWO EXCELLENT DEMO COURSES </h2>
+<p>If you have taken a course at edX.org, you have an idea of what this platform can offer.</p>
+<p>Go through <a href="https://www.edx.org/course/edx/edx-edxdemo101-edx-demo-1038">this_free_demo_course</a> in order to explore the edX learning experience.</p>
+<p>In the demo you will find three sample weeks and lessons, containing  interactive tools, videos, readings, quizzes, questions, grading techniques and progress reports.</p>
+<p>Another overview for a newbie is offered by Stanford University. Go to the left-hand column <a href="https://class.stanford.edu/courses/StanfordOnline/OpenEdX/Demo/info">on the Courseware page</a> to view the demo units.</p>
+<p>To examine the outline of this demo course, click <a href="https://class.stanford.edu/courses/StanfordOnline/OpenEdX/Demo/4b33106cef2d4677931e6b01f31a608d/">here</a>.&nbsp;</p>
+
+<br>
+    
+<h2>4. OPEN-SOURCE INITIATIVE </h2>
+<p>MIT and Harvard, the creators of edX.org, released the software behind the educational portal as <a href="http://code.edx.org">open-source</a> in June of 2013.</p>
+<p>Consequently, any skillful developer has been able to build a fully  brandable and customizable Open edX platform.</p>
+<p>Code contributions are received every day, and innovation is non-stop. Open edX’s code is available under an <a href="http://www.gnu.org/licenses/agpl-3.0.html">AGPL_license</a>. Keep in mind, however, that it requires you to make all of the code that modifies the core of the platform available as open source (this excludes XBlocks and JSinput). You can also sell a customized version of Open edX, as long as you release it.</p>
+<p>As a not-for-profit enterprise composed of leading universities, the  xConsortium –which is behind edX.org and the Open edX software– is committed to an open-source vision.</p>
+<p>Along with MIT and Harvard University, significant contributors to the Open edX initiative include Google, Stanford, UC Berkeley, the University of Queensland and Tsinghua University.</p>
+
+<br>
+    
+<h2>5. THE PLATFORM </h2>
+<p>Open edX is implemented mostly through Python in the server and Javascript in the browser.</p>
+<p>Its architecture is designed to be modular, readily enabling new components to be developed and plugged in.</p>
+<p>The code of the platform is located at <a href="https://github.com/edx/">github.com/edx/</a>. The main repository is “edx-platform”, and it covers the LMS and the Studio authoring tool (or CMS). It also includes XBlocks, the courseware components.</p>
+<p>The software is written in Python, Ruby and Javascript, with several extensions:</p>
+<ul>
+    <li>Django + Mako</li>
+    <li>Ruby on Rails</li>
+    <li>NodeJS</li>
+    <li>Coffeescript</li>
+    <li>SASS</li>
+</ul>
+<p>A driving principle of Open edX is scalability. A number of modules and their respective databases can be run on separate machines and scaled easily.</p>
+
+<br>
+    
+<h2>6. COMPONENTS </h2>
+<p>Open edX consists of multiple components. The main ones are:</p>
+<ul>
+    <li>LMS (Learning Management System): students’ view
+    <p>It is the part of Open edX that students interact with. It displays content and runs quizzes and interactive apps. The LMS provides user registration, progress tracking, grading, and forums. Data storage: courses are saved in MongoDB and student data in MySQL.</p>
+    </li>
+    <li>Studio course authoring tool or CMS (Content Management System): authors’ view
+    <p>EdX Studio presents a friendly graphical user interface. You can upload and arrange lectures into logical units, post course materials, create quizzes and assessments, etc.</p><p>The types of exercises that instructors can create are virtually limitless. Aside from the multiple-choice, text or equation input types, Open edX integrates LTI components, customized Javascript as well as tools such as Google Instant Hangout and even a Molecule Editor (read <a href="http://ca.readthedocs.org/en/latest/exercises_tools/create_exercises_and_tools.html">the_full_list</a>). Note that if you wish to use Hangouts you may need to ask Google for permission and to whitelabel your website.</p><p>Like the LMS, Studio stores its content in MongoDB and MySQL.</p>
+    </li>
+    <li>CS Comments Service
+    <p>A server-side Ruby application that supports voting, nested comments and instructors’ endorsements.</p>
+    </li>
+    <li>XBlocks
+    <p>A course is made of XBlock learning components, which can be created by third parties to extend Open edX’s functionality.</p><p>Other optional components of Open edX are:</p>
+    </li>
+    <li>XQueue Service
+    <p>Defines an interface for the LMS to communicate with external checker services. For example, when a student submits a problem in the LMS, it is sent to XQueue in order for it to be processed.</p>
+    </li>
+    <li>XServer
+    <p>XServer accepts student code submissions from the LMS and runs the code using courseware graders.</p>
+    </li>
+    <li>edX-ora (Open Response Assessor)
+    <p>It takes a submission from an XQueue installation that can be graded either by peers, staff or machine learning software. Results are then returned to the LMS.</p>
+    </li>
+    <li>Discern
+    <p>It is an API that allows to grade responses using artificial intelligence and machine learning-based automated textual and numeric classification. It is a high-performance, scalable solution that can effectively help students learn by allowing them to receive instant feedback for their work.</p>
+    </li>
+    <li>EASE (Enhanced AI Scoring Engine)
+    <p>A library that allows for machine learning-based classification of textual content. This is also useful for tasks such as scoring student essays.</p>
+    </li>
+    <li>edinsights
+    <p>This is a development version of a Django + Mongo framework for creating simple, pluggable analytics based on streaming events.</p>
+    </li>
+    <li>notifier
+    <p>Sends daily digests of new content to users who are subscribed to a given forum.</p>
+    </li>
+</ul>
+<p>Every day we see more functionalities being added to the Open edX software. The features listed above are just the beginning. To learn about the product roadmap ahead, check <a href="https://edx-wiki.atlassian.net/wiki/display/OPENPROD/Open+edX+Public+Product+Roadmap">the official page</a>.</p>
+    
+    
