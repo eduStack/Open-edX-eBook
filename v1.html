@@ -74,36 +74,47 @@
 <p>Open edX consists of multiple components. The main ones are:</p>
 <ul>
     <li>LMS (Learning Management System): students’ view
+        <br>
         <p>It is the part of Open edX that students interact with. It displays content and runs quizzes and interactive apps. The LMS provides user registration, progress tracking, grading, and forums. Data storage: courses are saved in MongoDB and student data in MySQL.</p>
     </li>
     <li>Studio course authoring tool or CMS (Content Management System): authors’ view
+        <br>
         <p>EdX Studio presents a friendly graphical user interface. You can upload and arrange lectures into logical units, post course materials, create quizzes and assessments, etc.</p><p>The types of exercises that instructors can create are virtually limitless. Aside from the multiple-choice, text or equation input types, Open edX integrates LTI components, customized Javascript as well as tools such as Google Instant Hangout and even a Molecule Editor (read <a href="http://ca.readthedocs.org/en/latest/exercises_tools/create_exercises_and_tools.html">the full list</a>). Note that if you wish to use Hangouts you may need to ask Google for permission and to whitelabel your website.</p><p>Like the LMS, Studio stores its content in MongoDB and MySQL.</p>
     </li>
     <li>CS Comments Service
+        <br>
         <p>A server-side Ruby application that supports voting, nested comments and instructors’ endorsements.</p>
     </li>
     <li>XBlocks
+        <br>
         <p>A course is made of XBlock learning components, which can be created by third parties to extend Open edX’s functionality.</p><p>Other optional components of Open edX are:</p>
     </li>
     <li>XQueue Service
+        <br>
         <p>Defines an interface for the LMS to communicate with external checker services. For example, when a student submits a problem in the LMS, it is sent to XQueue in order for it to be processed.</p>
     </li>
     <li>XServer
+        <br>
         <p>XServer accepts student code submissions from the LMS and runs the code using courseware graders.</p>
     </li>
     <li>edX-ora (Open Response Assessor)
+        <br>
         <p>It takes a submission from an XQueue installation that can be graded either by peers, staff or machine learning software. Results are then returned to the LMS.</p>
     </li>
     <li>Discern
+        <br>
         <p>It is an API that allows to grade responses using artificial intelligence and machine learning-based automated textual and numeric classification. It is a high-performance, scalable solution that can effectively help students learn by allowing them to receive instant feedback for their work.</p>
     </li>
     <li>EASE (Enhanced AI Scoring Engine)
+        <br>
         <p>A library that allows for machine learning-based classification of textual content. This is also useful for tasks such as scoring student essays.</p>
     </li>
     <li>edinsights
+        <br>
         <p>This is a development version of a Django + Mongo framework for creating simple, pluggable analytics based on streaming events.</p>
     </li>
     <li>notifier
+        <br>
         <p>Sends daily digests of new content to users who are subscribed to a given forum.</p>
     </li>
 </ul>
@@ -115,21 +126,26 @@
 <p>There are five ways to extend Open edX:</p>
 <ol>
     <li>XBlocks
+        <br>
         <p>Form edX’s component architecture which allows course creators to integrate elements from all sorts of web services in order to expand the platform’s functionalities using Python. They can be written to store and present all sorts of data (read more below).</p>
     </li>
     <li>LTI components
+        <br>
         <p>Open edX supports LTI 1.1 and LTI 2.0 is in development. It is the external standard and applicable to platforms such as Canvas. See the available apps at <a href="https://www.eduappcenter.com/">eduappcenter.com</a>
         <p>The following is an overview of how to integrate LTI components. Once we have the required authentication parameters such as the consumer key and consumer secret, in addition to the launch URL and possibly context and resource link IDs (depending on the LTI tool), we may do so by logging into “Advanced Settings” under “Settings” on Studio. Enter “[“lti”]” as a Policy Value under the “advanced modules” Policy Key.</p>
         <p>Under “lti_passports”, add the ID, key and secret following this format: [“&lt;id&gt;:&lt;key&gt;:&lt;secret&gt;”]. Additional authentication parameters will depend on your LTI tool provider’s needs. Piazza’s integration provides <a href="https://s3.amazonaws.com/piazza-materials/LTI-Setup/AddingPiazzatoedX.pdf">a great example</a>.</p>
         <p>Set its visibility to public and start using it by clicking on “View resource in a new window”.</p>
     </li>
     <li>JSinput
+        <br>
         <p>This extension is good to grade and display new types of problems. Unlike XBlocks, JSinput runs on the browser which means that instructors can take advantage of it without modifying the platform on the server.</p>
     </li>
     <li>Hacking on core code
+        <br>
         <p>You can change anything, although it is not easy. As stated in “4. Open Source Initiative”, you must keep Open edX’s <a href="http://www.gnu.org/licenses/agpl-3.0.html">AGPL license</a> in mind. </p>
     </li>
     <li>Custom grader
+        <br>
         <p>Grading does not necessarily have to take place on the main server. This allows the instructors to return and render elaborate dynamically created HTML blocks as answers as opposed to just letters or numbers.</p>
     </li>
 </ol>
@@ -146,15 +162,19 @@
 <p>In our opinion, these are some of the best XBlocks:
 <ol>
     <li><a href="https://github.com/mitodl/edx-sga">Staff Graded Assignment</a>
+        <br>
         <p>Students are invited to upload documents as a way to encapsulate their work on their assignments. Instructors download the files and grade them.</p>
     </li>
     <li><a href="https://github.com/edx-solutions/xblock-mentoring">Mentoring</a>
+        <br>
         <p>It automates the workflow of real-life mentoring within an edX course. It supports free-form answers, multiple choice and response questions, rating scales and progression tracking</p>
     </li>
     <li><a href="https://github.com/edx-solutions/xblock-drag-and-drop">Drag and Drop</a>
+        <br>
         <p>Students are required to drag and drop text or images into different sections as specified by the assignment.</p>
     </li>
     <li><a href="https://github.com/edx-solutions/xblock-image-explorer">Image Explorer</a>
+        <br>
         <p>It allows display tool tips of an image within the course content. See <a href="https://github.com/edx/edx-platform/wiki/List-of-XBlocks">a more complete list</a> as well as <a href="http://xblock.readthedocs.org/en/latest/">the official explanation of the XBlock architecture</a>.</p>
     </li>
 </ol>
