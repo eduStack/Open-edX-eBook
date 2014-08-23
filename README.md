@@ -20,3 +20,8 @@ The eBook is divided into the following chapters:
 * ABOUT THE AUTHOR
 
 Feel free to contribute to it via pull requests! Contributions will figure in v2 of the ebook, which will be released in December under the same Creative Commons license. Let us know if you would like to be notified before the release.
+
+
+License
+--------------
+"The Ultimate Guide To Open edX" is under a <a href="http://creativecommons.org/licenses/by-sa/3.0/">Creative Commons Attribution-ShareAlike 3.0 Unported license</a>.
