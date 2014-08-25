@@ -19,7 +19,7 @@ The eBook is divided into the following chapters:
 * ABOUT IBL STUDIOS EDUCATION 
 * ABOUT THE AUTHOR
 
-Feel free to contribute to it via pull requests! Contributions will figure in v2 of the ebook, which will be released in December under the same Creative Commons license. Let us know if you would like to be notified before the release.
+Feel free to contribute to it via pull requests and add yourself to the Acknowledgements section! Contributions will figure in v2 of the ebook, which will be released in December under the same Creative Commons license. Let us know if you would like to be notified via email before it's released.
 
 
 License
